@@ -204,6 +204,10 @@ li.repo h3 {
   border-right-color: #6aad2d;
 }
 
+.sourceclear-red{
+    color:  #ff2600;
+}
+
 @keyframes small-swing { 0% { margin-top: 0px } 50% { margin-top: -10px } 100% { margin-top: 0px } }
 @-moz-keyframes small-swing { 0% { margin-top: 0px } 50% { margin-top: -10px } 100% { margin-top: 0px } }
 @-webkit-keyframes small-swing { 0% { margin-top: 0px } 50% { margin-top: -10px } 100% { margin-top: 0px } }
