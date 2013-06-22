@@ -1,5 +1,4 @@
 html {
-  background: url("bg.png") repeat;
 }
 
 body {
@@ -67,7 +66,6 @@ a:hover {
 
 #logo {
   width: 190px;
-  height: 64px;
   margin: 15px 0 0 15px;
   background: url("logo.png");
   text-indent: -99999px;
@@ -199,7 +197,7 @@ li.repo h3 {
 }
 
 .repo.java:after {
-  border-right-color: #cc8300;
+  border-right-color: #ff2600;
 }
 
 .repo.python:after {

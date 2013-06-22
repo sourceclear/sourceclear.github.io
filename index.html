@@ -2,14 +2,15 @@
 
 <html>
   <head>
-    <title>Twitter &hearts; Open Source</title>
+    <title>SourceClear - Open Source</title>
     <link rel="stylesheet" type="text/css" href="assets/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/grid.css">
     <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
     <script type="text/javascript">
 
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-39101739-1']);
+  _gaq.push(['_setAccount', 'XXXXXXXXXXXX']);
   _gaq.push(['_trackPageview']);
 
   (function() {
@@ -80,7 +81,7 @@
         repos = repos || [];
         page = page || 1;
 
-        var uri = "https://api.github.com/orgs/twitter/repos?callback=?"
+        var uri = "https://api.github.com/orgs/sourceclear/repos?callback=?"
                 + "&per_page=100"
                 + "&page="+page;
 
@@ -136,7 +137,7 @@
       }
       addRepos();
 
-      $.getJSON("https://api.github.com/orgs/twitter/members?callback=?", function (result) {
+      $.getJSON("https://api.github.com/orgs/sourceclear/members?callback=?", function (result) {
         var members = result.data;
 
         $(function () {
@@ -236,26 +237,24 @@
   <body>
     <div id="wrapper" class="grid clearfix">
       <div id="main" class="grid-1">
-        <div id="logo"><h1>Twitter Open Source</h1></div>
-        <h1>Twitter is built on open source software.</h1>
-        <p>Want to help? <a href="https://twitter.com/jobs">Join the Flock</a></p>
-        <p>Visit <a href="https://dev.twitter.com/">dev.twitter.com</a></p>
-        <p><a href="https://twitter.com/about/resources">Logos and other goodies</a></p>
+        <div id="logo"><h1>SourceClear Open Source</h1></div>
+        <h1>We <i class="icon-heart icon-2x"></i> Open Source.</h1>
+        <p>Visit <a href="https://www.souececlear.com/labs">SourceClear Labs</a></p>
       </div>
 
       <div class="grid grid-3">
         <div id="statistics" class="grid-1 alpha header">
           <h1>Statistics</h1>
           <p>
-            <a href="https://github.com/twitter/repositories"><span id="num-repos"><img src="assets/spinner.gif" /></span> public repos</a>
+            <a href="https://github.com/sourceclear/repositories"><span id="num-repos"><img src="assets/spinner.gif" /></span> Public Repos</a>
             <br>
-            <a href="https://github.com/twitter?tab=members"><span id="num-members"><img src="assets/spinner.gif" /></span> members</a>
+            <a href="https://github.com/sourceclear?tab=members"><span id="num-members"><img src="assets/spinner.gif" /></span> Team Members</a>
           </p>
-          <p class="email"><a href="mailto:opensource@twitter.com">opensource@twitter.com</a></p>
+          <p class="email"><a href="mailto:opensource@sourceclear.com">opensource@sourceclear.com</a></p>
         </div>
 
         <div id="recently-updated" class="grid-2 omega header">
-          <h1>Recently updated <a href="https://github.com/twitter/repositories">View All on GitHub</a></h1>
+          <h1>Recently updated <a href="https://github.com/sourceclear/repositories">View All on GitHub</a></h1>
           <ol id="recently-updated-repos"></ol>
         </div>
       </div>
