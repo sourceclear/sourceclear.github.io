@@ -42,8 +42,8 @@ a:hover {
 }
 
 #main, div.header, li.repo {
-  background: white;
-  background: rgba(255, 255, 255, 0.7);
+
+  background: rgba(255,255,255,0.9);
   -moz-box-shadow:    0px 0px 5px 1px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
   box-shadow:         0px 0px 5px 1px rgba(0, 0, 0, 0.1);
@@ -150,8 +150,7 @@ li.repo > a {
 }
 
 li.repo a:hover {
-  background: #efefef;
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(0,0,0,0.05);
 }
 
 li.repo h2, li.repo h3, li.repo p {
@@ -251,4 +250,15 @@ li.repo h3 {
   width: 100%;
   height: 100%;
   overflow: hidden;
+}
+
+html{
+
+    background:url('background.jpg') no-repeat center center;
+    min-height:100%;
+    background-size:cover;
+}
+
+body{
+min-height:100%;
 }
