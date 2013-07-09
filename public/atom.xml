@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[SOURCECLEAR]]></title>
+  <link href="http://sourceclear.github.io/atom.xml" rel="self"/>
+  <link href="http://sourceclear.github.io/"/>
+  <updated>2013-07-09T00:58:09-07:00</updated>
+  <id>http://sourceclear.github.io/</id>
+  <author>
+    <name><![CDATA[sourceclear]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Introducing Headlines Library]]></title>
+    <link href="http://sourceclear.github.io/blog/2013/07/10/introducing-headlines-library/"/>
+    <updated>2013-07-10T10:00:00-07:00</updated>
+    <id>http://sourceclear.github.io/blog/2013/07/10/introducing-headlines-library</id>
+    <content type="html"><![CDATA[<p>Here at <a title="SourceClear.com" href="https://www.sourceclear.com">SourceClear</a>, we&rsquo;ve been inspired!  We saw Twitter&rsquo;s excellent <a title="SecureHeaders" href="https://github.com/twitter/secureheaders">SecureHeaders</a> library, which offers an easy way to include several security related HTTP response headers into your Rails applications.  Why should Rails have all the fun?  As a response (pun intended) we&rsquo;re rolling out our own Java-based secure headers library for servlet based applications.  Say Hello to <a title="Headlines" href="https://github.com/sourceclear/headlines">Headlines</a>.
+Headlines is a library which uses servlet filters to inject HTTP response headers coming out of your app server.<!-- more -->
+With a few simple configuration directives, you can instruct client browsers to take several precautions that will decrease the attack surface area of your app.  These reduce the risk of a number of common web vulnerabilities. Specifically HeadLines locks down your app with:</p>
+
+<ul>
+    <li><a title="HSTS" href="https://tools.ietf.org/html/rfc6797">Http Strict Transport Security (HSTS)</a></li>
+    <li><a title="X-Frame Options" href="https://tools.ietf.org/html/draft-ietf-websec-x-frame-options-00">X-Frame Options</a></li>
+    <li><a title="XSS Filter" href="http://msdn.microsoft.com/en-us/library/dd565647.aspx">Microsoft&#8217;s XSS Filter</a></li>
+    <li><a title="CSP" href="https://developer.mozilla.org/en-US/docs/Security/CSP">Content Security Policy</a></li>
+    <li><a title="HttpOnly" href="https://www.owasp.org/index.php/HttpOnly">HTTP Only Cookies</a></li>
+</ul>
+
+
+<p>I&rsquo;ll go into detail each of these technologies in future posts, but for now I&rsquo;ll give a quick overview of the entire package:</p>
+
+<p><strong>HSTS</strong> is a rad little header that specifies to the browser that <em>all</em> future requests to the server should be over HTTPS.  This helps guard against insecure man in the middle attacks as well as developer goofs where a link may specify HTTP instead of HTTPS.</p>
+
+<p><strong>X-Frame Options</strong> instruct client browsers to never show your app pages within a frame (or only frames from certain hosts).</p>
+
+<p><strong>Microsoft&rsquo;s XSS Filter</strong> is an opaque IE8+ technology that detects and mitigates <a title="Reflected XSS" href="https://en.wikipedia.org/wiki/Cross-site_scripting#Non-persistent">reflected XSS</a> attacks.</p>
+
+<p><strong>Content Security Policy (CSP)</strong> allows you to specify to the browser where it should be allowed to load resources from.  It&rsquo;s a powerful technology that allows you to make rules such as &lsquo;only load JavaScript  from our domain, and never allow the use of inline script&rsquo;.</p>
+
+<p><strong>Http Only Cookies</strong> When a cookie is marked HttpOnly, the browser will not allow scripts to access cookie contents, only sending it back to the server over HTTP or HTTPS.  This is ideal for use on session cookies.</p>
+
+<p>Headlines is open sourced under the Apache 2.0 license, check out the source and developer docs on Github:  <a title="HeadLines" href="https://github.com/sourceclear/headlines"><a href="https://github.com/sourceclear/headlines">https://github.com/sourceclear/headlines</a></a></p>
+
+<p>Maven users can enjoy this goodness right now by including it in their project (and following the simple instructions in the Github README):</p>
+
+<div><script src='https://gist.github.com/5724892.js'></script>
+<noscript><pre><code></code></pre></noscript></div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Introducing The Headlines Project]]></title>
+    <link href="http://sourceclear.github.io/blog/2013/07/10/introducing-the-headlines-project/"/>
+    <updated>2013-07-10T09:15:00-07:00</updated>
+    <id>http://sourceclear.github.io/blog/2013/07/10/introducing-the-headlines-project</id>
+    <content type="html"><![CDATA[<p>We have just pushed a new project live called Headlines. Headlines is all about security HTTP Headers and consists of two parts:</p>
+
+<ul>
+<li>Headlines Scan</li>
+<li>Headlines Library <!-- more --></li>
+</ul>
+
+
+<p>Headlines Scan is a free service that analyzes HTTP response headers returned from any web site on the Internet and reports on the presence of HTTP security headers that can be used by software developers to prevent common security vulnerabilities like Cross Site Scripting (XSS), Cross Site Request Forgery (CSRF) and Click Jacking. We test for the following headers:</p>
+
+<ul>
+<li>Content Security Policy</li>
+<li>Strict Transport Security</li>
+<li>X-Frame Options</li>
+<li>X-Content-Type-Options</li>
+<li>X-XSS-Protection</li>
+</ul>
+
+
+<p>Headlines Library is an open source Java library which uses servlet filters to inject HTTP response headers coming out of your app server.</p>
+
+<p>Given the prevelance of vulnerabilities like Cross Site Scripting (XSS), Cross Site Request Forgery (CSRF) and Click Jacking It is not suprising that progressive technology companies like Twitter, FaceBook and Google are all using security headers to raise the security bar. Sadly broader adoption is low.</p>
+
+<p>We will follow-up with posts and screencasts on both Headlines Scan and Headlines Library and publish an on-going report tracking the Top 1,000 web sites on the Internet soon.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Tim Smith has been SourceCleared]]></title>
+    <link href="http://sourceclear.github.io/blog/2013/07/10/tim-smith/"/>
+    <updated>2013-07-10T09:03:00-07:00</updated>
+    <id>http://sourceclear.github.io/blog/2013/07/10/tim-smith</id>
+    <content type="html"><![CDATA[<p>I am excited to welcome Tim Smith who is joining us as our Chief Operating Officer. Before joining us Tim was an owner and Director of a successful security firm in Australia. He can be found as @tjwsmith on <a href="https://twitter.com/tjwsmith">Twitter</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Paul Ambrosini has been SourceCleared]]></title>
+    <link href="http://sourceclear.github.io/blog/2013/07/10/paul-ambrosini/"/>
+    <updated>2013-07-10T09:02:00-07:00</updated>
+    <id>http://sourceclear.github.io/blog/2013/07/10/paul-ambrosini</id>
+    <content type="html"><![CDATA[<p>I am excited to welcome Paul Ambrosini as a co-founding software engineer. Paul has been both a security consultant at McAfee and software developer at Boeing.He can be found as @cl4r1ty on <a href="https://twitter.com/cl4r1ty">Twitter</a> and Github.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Jason Nichols has been SourceCleared]]></title>
+    <link href="http://sourceclear.github.io/blog/2013/07/10/jason-nichols/"/>
+    <updated>2013-07-10T09:01:00-07:00</updated>
+    <id>http://sourceclear.github.io/blog/2013/07/10/jason-nichols</id>
+    <content type="html"><![CDATA[<p>I am excited to welcome Jason Nichols as a co-founding software engineer. Jason has been building Java software for over a decade including working on situational awareness code for military applications.He can be found as @kickroot on <a href="https://twitter.com/kickroot">Twitter</a> and Github.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Healthcare for Software?]]></title>
+    <link href="http://sourceclear.github.io/blog/2013/04/07/healthcare-for-software/"/>
+    <updated>2013-04-07T13:30:00-07:00</updated>
+    <id>http://sourceclear.github.io/blog/2013/04/07/healthcare-for-software</id>
+    <content type="html"><![CDATA[<p>Mark Curphey here. I have dedicated my career for the last 15 years to application security and software development and in that time we have seen unimaginable change on the Internet. The web and open standards have meant a unprecedented level of system connectivity and through social networks we are now seeing an equally unprecedented level of personal connectivity. Developers have been able to achieve these amazing changes by embracing pragmatic software engineering practices like agile, scalable architectures like ‘the cloud’ and reusing software like open source and web services. We have seen social identity and federated authentication become a reality and the promise of so called big data to use algorithms to spot patterns and predict the future is in full-force today. Some developers have even recursively embraced the social phenomenon creating <a href="http://github.com">Github</a> and <a href="http://www.stackoverflow.com">Stack Overflow</a>, systems that have disrupted the established practices millions of developers used to build increasingly better software.<!-- more --></p>
+
+<p>This amazing technology revolution has always had a big dark shadow that continues darken: software security or what is maybe better described as software insecurity. While online community has played a role in advancing application security (<a href="http://www.owasp.org">OWASP</a>, a project I personally founded in 2001 has had over 100 million page views to date), software security is a global epidemic in the same way that the world is dealing with a global health epidemic.</p>
+
+<p>The US Center for Disease Control (CDC) says that during the past 20 years, there has been a dramatic increase in obesity in the United States and rates remain high. In 2011 more than one-third of U.S. adults (35.7%) and approximately 17% (or 12.5 million) of children and adolescents aged 2—19 years are obese. The software industry doesn’t have such reliable data but every single day we can read about companies that have been hacked, data that has been breached and even lives that are put at risk as the result of insecure software.</p>
+
+<p>The healthcare industry has understood for a long time that the solution to the global health epidemic isn’t to rely on magic diet pills, constant blood tests or drastic gastric surgery. It is widely accepted that the solution is to move the problem upstream and help people make informed healthy choices that affect their life style. While better diagnostic tools certainly help, when you discover that you have the disease it is usually expensive, almost always painful and sometimes too late to fix. Over the last decade we have seen a dramatic shift from diagnostics and treating symptoms to preventive medicine and we are now seeing a new breed of practices and technology being adopted. We have heart-rate monitors, <a href="http://www.fitbit.com">FitBit</a>‘s that track and even suggest movement, <a href="http://www.myzeo.com/sleep/">sleep monitors</a> that track sleep quality and smartphone applications that <a href="http://tracker.dailyburn.com/apps">magically scan barcodes</a> on food to find out the calorific and fat content mapped to your daily intake. These tools are being connected to online analytics systems and social networks to become an integral part of everyday lives and are having a real impact on the health crisis.</p>
+
+<p>Like the healthcare industry we don’t think the solution to software security is to create an army of doctors, develop magic pills or make blood tests a routine part of our lives. We strongly believe that software developers want to do the right thing but today it is simply too hard. Today there is a significant disconnect between developers and IT security teams / auditors and while there have been excellent advances in recent years in automated security testing tools that can certainly help identity some issues, relying on the digital equivalent of an army of Doctors applying blood tests is not the solution. The right approach is to move security upstream to the developers and help them make informed decisions. We are embracing the technology changes that we have seen have such a dramatic impact on mainstream development and are engineering a platform to bring our ideas to market. We know this won’t be easy and that change won’t happen overnight but we believe that by orchestrating the right practices, and making the right knowledge available to developers where and when they need it and then helping software teams monitor their effectiveness, we can move the needle. We also believe that applying data science will lead to predictive decision making, something we are calling “Software Precognition”.</p>
+
+<p>Today we have pushed an initial web site at <a href="https://www.sourceclear.com"><a href="https://www.sourceclear.com">https://www.sourceclear.com</a></a> and are delighted to announce the the formal advisory board that we are working with behind the scenes.</p>
+
+<ul>
+<li>George Kurtz – CEO of CrowdStrike and former global CTO of McAfee</li>
+<li>John Viega – EVP of SilverSky Security and former Chief Security Architect at McAfee</li>
+<li>Justin Somaini – Former CSO of Yahoo, Symantec and Verisign</li>
+<li>Dean Hickman-Smith – SVP of Field Operations at AeroHive Networks and former SVP of sales at ProofPoint and VP of emerging technology at Juniper and NetScreen</li>
+</ul>
+
+
+<p>We are also working with Dr. Brian Wallace of University College London who has a Ph.D. in cryptography and is an academic researcher in statistical modeling of economic systems. Brian is helping us develop our predictive algorithms.</p>
+
+<p>John Viega added “I have written countless books and tools on the subject over the years and frankly been critical about the ROI but that’s been based on what Curphey and I know. Software security today is too damn hard, too damn expensive and it doesn’t scale. The approach SourceClear are taking is the long game and if they get it right they will have the same impact GitHub has had on the software industry”.George Kurtz said, “The clinical definition of insanity is to do the same thing over again and expect different results. We have watched people invest in testing for the last decade and we are in the same if not worse place today. At CrowdStrike we realized we needed to take a different approach to identifying and preventing the damage from targeted attacks in the same way SourceClear realized that a different and unique approach to creating secure software was necessary”.</p>
+
+<p>Justin Somaini got involved when I approached him while he was CSO at Yahoo. We worked together at Charles Schwab a decade ago when he ran the security operations program and I ran the software security program. “When Mark told me what he was building I immediately knew it had a chance to actually work in large enterprises. Finally someone building a platform and tools for developers that also provided x-ray specs into the state of software security across the company”.</p>
+
+<p>We are currently raising a seed round of investment in April / May and will be embracing customer driven development (early adopters) and providing a limited set of services. We have a number of free open source projects that we expect to release in the coming months including one to inject security headers into Enterprise Java applications using continuous integration and irradiate entire classes of vulnerabilities. We are also writing a book called Practical Software Security for O’Reilly. It is the first of its kind and should be published this summer. We expect parts of our platform to be available before the end of the year.</p>
+
+<p>We have a clear company mission: <strong>We make secure software engineering scale</strong>.</p>
+
+<p>If you are interested in what we are doing, talking about projects you want to undertake or becoming an early adopter then we would love to talk!</p>
+
+<ul>
+<li>Mark Curphey (President &amp; Founder)</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

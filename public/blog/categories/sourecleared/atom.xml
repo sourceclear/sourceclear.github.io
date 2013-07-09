@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: sourecleared, | SOURCECLEAR]]></title>
+  <link href="http://sourceclear.github.io/blog/categories/sourecleared/atom.xml" rel="self"/>
+  <link href="http://sourceclear.github.io/"/>
+  <updated>2013-07-09T00:58:09-07:00</updated>
+  <id>http://sourceclear.github.io/</id>
+  <author>
+    <name><![CDATA[sourceclear]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Tim Smith has been SourceCleared]]></title>
+    <link href="http://sourceclear.github.io/blog/2013/07/10/tim-smith/"/>
+    <updated>2013-07-10T09:03:00-07:00</updated>
+    <id>http://sourceclear.github.io/blog/2013/07/10/tim-smith</id>
+    <content type="html"><![CDATA[<p>I am excited to welcome Tim Smith who is joining us as our Chief Operating Officer. Before joining us Tim was an owner and Director of a successful security firm in Australia. He can be found as @tjwsmith on <a href="https://twitter.com/tjwsmith">Twitter</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Paul Ambrosini has been SourceCleared]]></title>
+    <link href="http://sourceclear.github.io/blog/2013/07/10/paul-ambrosini/"/>
+    <updated>2013-07-10T09:02:00-07:00</updated>
+    <id>http://sourceclear.github.io/blog/2013/07/10/paul-ambrosini</id>
+    <content type="html"><![CDATA[<p>I am excited to welcome Paul Ambrosini as a co-founding software engineer. Paul has been both a security consultant at McAfee and software developer at Boeing.He can be found as @cl4r1ty on <a href="https://twitter.com/cl4r1ty">Twitter</a> and Github.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Jason Nichols has been SourceCleared]]></title>
+    <link href="http://sourceclear.github.io/blog/2013/07/10/jason-nichols/"/>
+    <updated>2013-07-10T09:01:00-07:00</updated>
+    <id>http://sourceclear.github.io/blog/2013/07/10/jason-nichols</id>
+    <content type="html"><![CDATA[<p>I am excited to welcome Jason Nichols as a co-founding software engineer. Jason has been building Java software for over a decade including working on situational awareness code for military applications.He can be found as @kickroot on <a href="https://twitter.com/kickroot">Twitter</a> and Github.</p>
+]]></content>
+  </entry>
+  
+</feed>

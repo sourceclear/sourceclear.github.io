@@ -1,0 +1,26 @@
+body > header {
+  background: $header-bg;
+  h1 {
+    margin: 0;
+    a, a:visited, a:hover {
+      color: $title_color;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: "Proxima-Nova";
+      font-weight: 900;
+    }
+  }
+  h2 {
+    margin: .2em 0 0;
+    @extend .sans;
+    font-size: 1em;
+    color: $subtitle-color;
+    font-weight: normal;
+  }
+  dot {
+    font-size: 5em;
+    color: #FF2600;
+  }
+}
+
+
