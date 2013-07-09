@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Healthcare for Software? - SOURCECLEAR</title>
+  <meta name="author" content="sourceclear">
+
+  
+  <meta name="description" content="Mark Curphey here. I have dedicated my career for the last 15 years to application security and software development and in that time we have seen &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://sourceclear.github.io/blog/2013/04/07/healthcare-for-software">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="SOURCECLEAR" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-39698133-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+	<a href="https://www.sourceclear.com"><img class="left" src="/images/SC1.png" title="image" alt="images">
+  </a>
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:sourceclear.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="https://www.sourceclear.com/products">PRODUCTS</a></li>
+  <li><a href="https://www.sourceclear.com/labs">LABS</a></li>
+  <li><a href="http://blog.sourceclear.com">BLOG</a></li>
+  <li><a href="https://www.sourceclear.com/about">ABOUT</a></li>
+  <li><a href="https://www.sourceclear.com/contact">CONTACT</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Healthcare for Software?</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-07T13:30:00-07:00" pubdate data-updated="true">Apr 7<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Mark Curphey here. I have dedicated my career for the last 15 years to application security and software development and in that time we have seen unimaginable change on the Internet. The web and open standards have meant a unprecedented level of system connectivity and through social networks we are now seeing an equally unprecedented level of personal connectivity. Developers have been able to achieve these amazing changes by embracing pragmatic software engineering practices like agile, scalable architectures like ‘the cloud’ and reusing software like open source and web services. We have seen social identity and federated authentication become a reality and the promise of so called big data to use algorithms to spot patterns and predict the future is in full-force today. Some developers have even recursively embraced the social phenomenon creating <a href="http://github.com">Github</a> and <a href="http://www.stackoverflow.com">Stack Overflow</a>, systems that have disrupted the established practices millions of developers used to build increasingly better software.<!-- more --></p>
+
+<p>This amazing technology revolution has always had a big dark shadow that continues darken: software security or what is maybe better described as software insecurity. While online community has played a role in advancing application security (<a href="http://www.owasp.org">OWASP</a>, a project I personally founded in 2001 has had over 100 million page views to date), software security is a global epidemic in the same way that the world is dealing with a global health epidemic.</p>
+
+<p>The US Center for Disease Control (CDC) says that during the past 20 years, there has been a dramatic increase in obesity in the United States and rates remain high. In 2011 more than one-third of U.S. adults (35.7%) and approximately 17% (or 12.5 million) of children and adolescents aged 2—19 years are obese. The software industry doesn’t have such reliable data but every single day we can read about companies that have been hacked, data that has been breached and even lives that are put at risk as the result of insecure software.</p>
+
+<p>The healthcare industry has understood for a long time that the solution to the global health epidemic isn’t to rely on magic diet pills, constant blood tests or drastic gastric surgery. It is widely accepted that the solution is to move the problem upstream and help people make informed healthy choices that affect their life style. While better diagnostic tools certainly help, when you discover that you have the disease it is usually expensive, almost always painful and sometimes too late to fix. Over the last decade we have seen a dramatic shift from diagnostics and treating symptoms to preventive medicine and we are now seeing a new breed of practices and technology being adopted. We have heart-rate monitors, <a href="http://www.fitbit.com">FitBit</a>‘s that track and even suggest movement, <a href="http://www.myzeo.com/sleep/">sleep monitors</a> that track sleep quality and smartphone applications that <a href="http://tracker.dailyburn.com/apps">magically scan barcodes</a> on food to find out the calorific and fat content mapped to your daily intake. These tools are being connected to online analytics systems and social networks to become an integral part of everyday lives and are having a real impact on the health crisis.</p>
+
+<p>Like the healthcare industry we don’t think the solution to software security is to create an army of doctors, develop magic pills or make blood tests a routine part of our lives. We strongly believe that software developers want to do the right thing but today it is simply too hard. Today there is a significant disconnect between developers and IT security teams / auditors and while there have been excellent advances in recent years in automated security testing tools that can certainly help identity some issues, relying on the digital equivalent of an army of Doctors applying blood tests is not the solution. The right approach is to move security upstream to the developers and help them make informed decisions. We are embracing the technology changes that we have seen have such a dramatic impact on mainstream development and are engineering a platform to bring our ideas to market. We know this won’t be easy and that change won’t happen overnight but we believe that by orchestrating the right practices, and making the right knowledge available to developers where and when they need it and then helping software teams monitor their effectiveness, we can move the needle. We also believe that applying data science will lead to predictive decision making, something we are calling “Software Precognition”.</p>
+
+<p>Today we have pushed an initial web site at <a href="https://www.sourceclear.com"><a href="https://www.sourceclear.com">https://www.sourceclear.com</a></a> and are delighted to announce the the formal advisory board that we are working with behind the scenes.</p>
+
+<ul>
+<li>George Kurtz – CEO of CrowdStrike and former global CTO of McAfee</li>
+<li>John Viega – EVP of SilverSky Security and former Chief Security Architect at McAfee</li>
+<li>Justin Somaini – Former CSO of Yahoo, Symantec and Verisign</li>
+<li>Dean Hickman-Smith – SVP of Field Operations at AeroHive Networks and former SVP of sales at ProofPoint and VP of emerging technology at Juniper and NetScreen</li>
+</ul>
+
+
+<p>We are also working with Dr. Brian Wallace of University College London who has a Ph.D. in cryptography and is an academic researcher in statistical modeling of economic systems. Brian is helping us develop our predictive algorithms.</p>
+
+<p>John Viega added “I have written countless books and tools on the subject over the years and frankly been critical about the ROI but that’s been based on what Curphey and I know. Software security today is too damn hard, too damn expensive and it doesn’t scale. The approach SourceClear are taking is the long game and if they get it right they will have the same impact GitHub has had on the software industry”.George Kurtz said, “The clinical definition of insanity is to do the same thing over again and expect different results. We have watched people invest in testing for the last decade and we are in the same if not worse place today. At CrowdStrike we realized we needed to take a different approach to identifying and preventing the damage from targeted attacks in the same way SourceClear realized that a different and unique approach to creating secure software was necessary”.</p>
+
+<p>Justin Somaini got involved when I approached him while he was CSO at Yahoo. We worked together at Charles Schwab a decade ago when he ran the security operations program and I ran the software security program. “When Mark told me what he was building I immediately knew it had a chance to actually work in large enterprises. Finally someone building a platform and tools for developers that also provided x-ray specs into the state of software security across the company”.</p>
+
+<p>We are currently raising a seed round of investment in April / May and will be embracing customer driven development (early adopters) and providing a limited set of services. We have a number of free open source projects that we expect to release in the coming months including one to inject security headers into Enterprise Java applications using continuous integration and irradiate entire classes of vulnerabilities. We are also writing a book called Practical Software Security for O’Reilly. It is the first of its kind and should be published this summer. We expect parts of our platform to be available before the end of the year.</p>
+
+<p>We have a clear company mission: <strong>We make secure software engineering scale</strong>.</p>
+
+<p>If you are interested in what we are doing, talking about projects you want to undertake or becoming an early adopter then we would love to talk!</p>
+
+<ul>
+<li>Mark Curphey (President &amp; Founder)</li>
+</ul>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Mark Curphey</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-07T13:30:00-07:00" pubdate data-updated="true">Apr 7<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/sourceclear/'>sourceclear</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://sourceclear.github.io/blog/2013/04/07/healthcare-for-software/" data-via="sourceclear" data-counturl="http://sourceclear.github.io/blog/2013/04/07/healthcare-for-software/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/07/10/jason-nichols/" title="Next Post: Jason Nichols has been SourceCleared">Jason Nichols has been SourceCleared &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/07/10/introducing-headlines-library/">Introducing Headlines Library</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/10/introducing-the-headlines-project/">Introducing the Headlines Project</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/10/tim-smith/">Tim Smith Has Been SourceCleared</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/10/paul-ambrosini/">Paul Ambrosini Has Been SourceCleared</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/10/jason-nichols/">Jason Nichols Has Been SourceCleared</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/sourceclear">@sourceclear</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'sourceclear',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+<section>
+<h1>Twitter</h1>
+<a class="twitter-timeline" href="https://twitter.com/sourceclear" data-widget-id="354315259831533569">Tweets by @sourceclear</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+ </section>
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><a href="https://www.sourceclear.com/about">About Us</a>  <a href="https://www.sourceclear.com/contact">Contact Us</a>
+  <a href="https://www.sourceclear.com/legal">Terms of Use</a>  <a href="https://www.sourceclear.com/legal">Security & Privacy</a>
+<p>&copy; 2013 SourceClear. All Rights Reserved</p>
+
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+---
+layout: post
+title: "Tim Smith has been SourceCleared"
+date: 2013-010-07 9:03
+comments: true
+categories: sourecleared, sourceclear, newhires
+author: Mark Curphey
+published: false
+---
+I am excited to welcome Tim Smith who is joining us as our Chief Operating Officer. Before joining us Tim was an owner and Director of a successful security firm in Australia. He can be found as @tjwsmith on <a href="https://twitter.com/tjwsmith">Twitter</a>.
