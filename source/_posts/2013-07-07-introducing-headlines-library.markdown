@@ -5,7 +5,7 @@ date: 2013-07-10 10:00
 comments: true
 categories: headlines labs open-source java
 author: Jason Nichols 
-published: true
+published: false
 ---
 Here at <a title="SourceClear.com" href="https://www.sourceclear.com">SourceClear</a>, we've been inspired!  We saw Twitter's excellent <a title="SecureHeaders" href="https://github.com/twitter/secureheaders">SecureHeaders</a> library, which offers an easy way to include several security related HTTP response headers into your Rails applications.  Why should Rails have all the fun?  As a response (pun intended) we're rolling out our own Java-based secure headers library for servlet based applications.  Say Hello to <a title="Headlines" href="https://github.com/sourceclear/headlines">Headlines</a>.
 Headlines is a library which uses servlet filters to inject HTTP response headers coming out of your app server.<!-- more -->

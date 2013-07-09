@@ -5,7 +5,7 @@ date: 2013-07-10 9:15
 comments: true
 categories: headlines labs open-source java
 author: Mark Curphey
-published: true
+published: false
 ---
 We have just pushed a new project live called Headlines. Headlines is all about security HTTP Headers and consists of two parts:
 
