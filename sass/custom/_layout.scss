@@ -205,3 +205,17 @@ form {
     }
   }
 }
+#blog-archives {
+  time {
+    position: relative !important;
+    top: inherit!important;
+  }
+  article {
+    padding-left: 10px !important;
+  }
+  h1 {
+    font-size: 1.3em !important;
+    padding: 0!important;
+    line-height: 20px!important;
+  }
+}
