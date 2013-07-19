@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[SOURCECLEAR]]></title>
+  <title><![CDATA[SourceClear]]></title>
   <link href="http://sourceclear.github.io/atom.xml" rel="self"/>
   <link href="http://sourceclear.github.io/"/>
-  <updated>2013-07-09T09:48:08-07:00</updated>
+  <updated>2013-07-19T12:01:38-07:00</updated>
   <id>http://sourceclear.github.io/</id>
   <author>
     <name><![CDATA[sourceclear]]></name>
@@ -12,105 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Introducing Headlines Library]]></title>
-    <link href="http://sourceclear.github.io/blog/2013/07/10/introducing-headlines-library/"/>
-    <updated>2013-07-10T10:00:00-07:00</updated>
-    <id>http://sourceclear.github.io/blog/2013/07/10/introducing-headlines-library</id>
-    <content type="html"><![CDATA[<p>Here at <a title="SourceClear.com" href="https://www.sourceclear.com">SourceClear</a>, we&rsquo;ve been inspired!  We saw Twitter&rsquo;s excellent <a title="SecureHeaders" href="https://github.com/twitter/secureheaders">SecureHeaders</a> library, which offers an easy way to include several security related HTTP response headers into your Rails applications.  Why should Rails have all the fun?  As a response (pun intended) we&rsquo;re rolling out our own Java-based secure headers library for servlet based applications.  Say Hello to <a title="Headlines" href="https://github.com/sourceclear/headlines">Headlines</a>.
-Headlines is a library which uses servlet filters to inject HTTP response headers coming out of your app server.<!-- more -->
-With a few simple configuration directives, you can instruct client browsers to take several precautions that will decrease the attack surface area of your app.  These reduce the risk of a number of common web vulnerabilities. Specifically HeadLines locks down your app with:</p>
-
-<ul>
-    <li><a title="HSTS" href="https://tools.ietf.org/html/rfc6797">Http Strict Transport Security (HSTS)</a></li>
-    <li><a title="X-Frame Options" href="https://tools.ietf.org/html/draft-ietf-websec-x-frame-options-00">X-Frame Options</a></li>
-    <li><a title="XSS Filter" href="http://msdn.microsoft.com/en-us/library/dd565647.aspx">Microsoft&#8217;s XSS Filter</a></li>
-    <li><a title="CSP" href="https://developer.mozilla.org/en-US/docs/Security/CSP">Content Security Policy</a></li>
-    <li><a title="HttpOnly" href="https://www.owasp.org/index.php/HttpOnly">HTTP Only Cookies</a></li>
-</ul>
-
-
-<p>I&rsquo;ll go into detail each of these technologies in future posts, but for now I&rsquo;ll give a quick overview of the entire package:</p>
-
-<p><strong>HSTS</strong> is a rad little header that specifies to the browser that <em>all</em> future requests to the server should be over HTTPS.  This helps guard against insecure man in the middle attacks as well as developer goofs where a link may specify HTTP instead of HTTPS.</p>
-
-<p><strong>X-Frame Options</strong> instruct client browsers to never show your app pages within a frame (or only frames from certain hosts).</p>
-
-<p><strong>Microsoft&rsquo;s XSS Filter</strong> is an opaque IE8+ technology that detects and mitigates <a title="Reflected XSS" href="https://en.wikipedia.org/wiki/Cross-site_scripting#Non-persistent">reflected XSS</a> attacks.</p>
-
-<p><strong>Content Security Policy (CSP)</strong> allows you to specify to the browser where it should be allowed to load resources from.  It&rsquo;s a powerful technology that allows you to make rules such as &lsquo;only load JavaScript  from our domain, and never allow the use of inline script&rsquo;.</p>
-
-<p><strong>Http Only Cookies</strong> When a cookie is marked HttpOnly, the browser will not allow scripts to access cookie contents, only sending it back to the server over HTTP or HTTPS.  This is ideal for use on session cookies.</p>
-
-<p>Headlines is open sourced under the Apache 2.0 license, check out the source and developer docs on Github:  <a title="HeadLines" href="https://github.com/sourceclear/headlines"><a href="https://github.com/sourceclear/headlines">https://github.com/sourceclear/headlines</a></a></p>
-
-<p>Maven users can enjoy this goodness right now by including it in their project (and following the simple instructions in the Github README):</p>
-
-<div><script src='https://gist.github.com/5724892.js'></script>
-<noscript><pre><code></code></pre></noscript></div>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Introducing The Headlines Project]]></title>
-    <link href="http://sourceclear.github.io/blog/2013/07/10/introducing-the-headlines-project/"/>
-    <updated>2013-07-10T09:15:00-07:00</updated>
-    <id>http://sourceclear.github.io/blog/2013/07/10/introducing-the-headlines-project</id>
-    <content type="html"><![CDATA[<p>We have just pushed a new project live called Headlines. Headlines is all about security HTTP Headers and consists of two parts:</p>
-
-<ul>
-<li>Headlines Scan</li>
-<li>Headlines Library <!-- more --></li>
-</ul>
-
-
-<p>Headlines Scan is a free service that analyzes HTTP response headers returned from any web site on the Internet and reports on the presence of HTTP security headers that can be used by software developers to prevent common security vulnerabilities like Cross Site Scripting (XSS), Cross Site Request Forgery (CSRF) and Click Jacking. We test for the following headers:</p>
-
-<ul>
-<li>Content Security Policy</li>
-<li>Strict Transport Security</li>
-<li>X-Frame Options</li>
-<li>X-Content-Type-Options</li>
-<li>X-XSS-Protection</li>
-</ul>
-
-
-<p>Headlines Library is an open source Java library which uses servlet filters to inject HTTP response headers coming out of your app server.</p>
-
-<p>Given the prevelance of vulnerabilities like Cross Site Scripting (XSS), Cross Site Request Forgery (CSRF) and Click Jacking It is not suprising that progressive technology companies like Twitter, FaceBook and Google are all using security headers to raise the security bar. Sadly broader adoption is low.</p>
-
-<p>We will follow-up with posts and screencasts on both Headlines Scan and Headlines Library and publish an on-going report tracking the Top 1,000 web sites on the Internet soon.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Tim Smith has been SourceCleared]]></title>
-    <link href="http://sourceclear.github.io/blog/2013/07/10/tim-smith/"/>
-    <updated>2013-07-10T09:03:00-07:00</updated>
-    <id>http://sourceclear.github.io/blog/2013/07/10/tim-smith</id>
-    <content type="html"><![CDATA[<p>I am excited to welcome Tim Smith who is joining us as our Chief Operating Officer. Before joining us Tim was an owner and Director of a successful security firm in Australia. He can be found as @tjwsmith on <a href="https://twitter.com/tjwsmith">Twitter</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Paul Ambrosini has been SourceCleared]]></title>
-    <link href="http://sourceclear.github.io/blog/2013/07/10/paul-ambrosini/"/>
-    <updated>2013-07-10T09:02:00-07:00</updated>
-    <id>http://sourceclear.github.io/blog/2013/07/10/paul-ambrosini</id>
-    <content type="html"><![CDATA[<p>I am excited to welcome Paul Ambrosini as a co-founding software engineer. Paul has been both a security consultant at McAfee and software developer at Boeing.He can be found as @cl4r1ty on <a href="https://twitter.com/cl4r1ty">Twitter</a> and Github.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Jason Nichols has been SourceCleared]]></title>
-    <link href="http://sourceclear.github.io/blog/2013/07/10/jason-nichols/"/>
-    <updated>2013-07-10T09:01:00-07:00</updated>
-    <id>http://sourceclear.github.io/blog/2013/07/10/jason-nichols</id>
-    <content type="html"><![CDATA[<p>I am excited to welcome Jason Nichols as a co-founding software engineer. Jason has been building Java software for over a decade including working on situational awareness code for military applications.He can be found as @kickroot on <a href="https://twitter.com/kickroot">Twitter</a> and Github.</p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[Healthcare for Software?]]></title>
@@ -127,7 +28,7 @@ With a few simple configuration directives, you can instruct client browsers to 
 
 <p>Like the healthcare industry we don’t think the solution to software security is to create an army of doctors, develop magic pills or make blood tests a routine part of our lives. We strongly believe that software developers want to do the right thing but today it is simply too hard. Today there is a significant disconnect between developers and IT security teams / auditors and while there have been excellent advances in recent years in automated security testing tools that can certainly help identity some issues, relying on the digital equivalent of an army of Doctors applying blood tests is not the solution. The right approach is to move security upstream to the developers and help them make informed decisions. We are embracing the technology changes that we have seen have such a dramatic impact on mainstream development and are engineering a platform to bring our ideas to market. We know this won’t be easy and that change won’t happen overnight but we believe that by orchestrating the right practices, and making the right knowledge available to developers where and when they need it and then helping software teams monitor their effectiveness, we can move the needle. We also believe that applying data science will lead to predictive decision making, something we are calling “Software Precognition”.</p>
 
-<p>Today we have pushed an initial web site at <a href="https://www.sourceclear.com"><a href="https://www.sourceclear.com">https://www.sourceclear.com</a></a> and are delighted to announce the the formal advisory board that we are working with behind the scenes.</p>
+<p>Today we have pushed an initial web site at <a href="https://www.sourceclear.com">https://www.sourceclear.com</a> and are delighted to announce the the formal advisory board that we are working with behind the scenes.</p>
 
 <ul>
 <li>George Kurtz – CEO of CrowdStrike and former global CTO of McAfee</li>
