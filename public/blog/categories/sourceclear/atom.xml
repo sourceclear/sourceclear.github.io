@@ -4,7 +4,7 @@
   <title><![CDATA[Category: sourceclear | SourceClear]]></title>
   <link href="http://sourceclear.github.io/blog/categories/sourceclear/atom.xml" rel="self"/>
   <link href="http://sourceclear.github.io/"/>
-  <updated>2013-07-19T12:10:09-07:00</updated>
+  <updated>2013-07-19T12:21:54-07:00</updated>
   <id>http://sourceclear.github.io/</id>
   <author>
     <name><![CDATA[sourceclear]]></name>
@@ -28,7 +28,7 @@
 
 <p>Like the healthcare industry we don’t think the solution to software security is to create an army of doctors, develop magic pills or make blood tests a routine part of our lives. We strongly believe that software developers want to do the right thing but today it is simply too hard. Today there is a significant disconnect between developers and IT security teams / auditors and while there have been excellent advances in recent years in automated security testing tools that can certainly help identity some issues, relying on the digital equivalent of an army of Doctors applying blood tests is not the solution. The right approach is to move security upstream to the developers and help them make informed decisions. We are embracing the technology changes that we have seen have such a dramatic impact on mainstream development and are engineering a platform to bring our ideas to market. We know this won’t be easy and that change won’t happen overnight but we believe that by orchestrating the right practices, and making the right knowledge available to developers where and when they need it and then helping software teams monitor their effectiveness, we can move the needle. We also believe that applying data science will lead to predictive decision making, something we are calling “Software Precognition”.</p>
 
-<p>Today we have pushed an initial web site at <a href="https://www.sourceclear.com">https://www.sourceclear.com</a> and are delighted to announce the the formal advisory board that we are working with behind the scenes.</p>
+<p>Today we have pushed an initial web site at <a href="https://www.sourceclear.com"><a href="https://www.sourceclear.com">https://www.sourceclear.com</a></a> and are delighted to announce the the formal advisory board that we are working with behind the scenes.</p>
 
 <ul>
 <li>George Kurtz – CEO of CrowdStrike and former global CTO of McAfee</li>
